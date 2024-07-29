@@ -1,0 +1,311 @@
+/* Toàn bộ trang */
+body, button, input, select {
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #E6B9A6;
+    color: #333;
+}
+
+textarea {
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Tiêu đề */
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+/* Đoạn văn */
+p {
+    margin-bottom: 1.5em;
+}
+
+/* Văn bản đậm */
+b, strong {
+    font-weight: bold;
+}
+
+/* Văn bản nghiêng */
+dfn, cite, em, i {
+    font-style: italic;
+}
+
+/* Trích dẫn */
+blockquote {
+    margin: 1.5em;
+    padding: 1.5em;
+    background: #E6B9A6;
+    border-left: 5px solid #808080;
+}
+
+/* Địa chỉ */
+address {
+    margin: 0 0 1.5em;
+}
+
+/* Mã nguồn */
+pre {
+    background: #f0f0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 1.6em;
+    border-radius: 5px;
+}
+
+/* Mã */
+code, kbd, tt, var {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+}
+
+/* Chú thích */
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+/* Tô sáng */
+mark, ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+/* Chữ nhỏ, lớn */
+sup, sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+/* Layout chính */
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.masthead {
+    padding: 1em 2em;
+    background-color: #EEEDEB;
+    color: #000;
+    font-weight: bolder;
+    font-size: larger;
+    border-bottom: 2px solid #ccc;
+}
+
+.masthead h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.intro {
+    color: #000;
+    background: #E6B9A6;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.intro p, .test-area {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+/* Khu vực kiểm tra */
+.test-area {
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Văn bản gốc */
+#origin-text {
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Văn bản gốc trong #origin-text */
+#origin-text p {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+/* Khu vực kiểm tra */
+.test-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Textarea trong test-wrapper */
+.test-wrapper textarea {
+    flex: 2;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.test-wrapper textarea:focus {
+    background-color: #fff;
+}
+
+/* Thông tin */
+.meta {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+/* Timer, WPM, Accuracy, Message */
+.timer, .wpm, .accuracy, .message {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Reset button */
+#reset {
+    padding: .4em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+#reset:hover {
+    color: #fff;
+    background-color: #E6B9A6;
+    border: 3px solid #E6B9A6;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+/* Footer links */
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #E6B9A6;
+}
+
+/* Thông báo hoàn thành */
+.completion-message {
+    display: none; /* Ẩn bảng hoàn thành mặc định */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa theo cả chiều dọc và ngang */
+    width: 60%; /* Giảm kích thước phần thông báo */
+    height: 40%; /* Giảm kích thước phần thông báo */
+    background: rgba(0, 0, 0, 0.8); /* Tăng độ mờ của nền để thông báo nổi bật hơn */
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em; /* Giảm kích thước chữ để thông báo dễ đọc hơn */
+    font-weight: bold;
+    border: 4px solid #E6B9A6; /* Đường viền màu sắc */
+    border-radius: 10px; /* Bo góc để mềm mại hơn */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Đổ bóng cho phần thông báo */
+    overflow: auto; /* Thay đổi thành auto để đảm bảo nội dung không bị ẩn */
+    z-index: 1000; /* Đảm bảo phần thông báo nằm trên các phần tử khác */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Hiệu ứng mờ dần khi hiển thị */
+    padding: 20px; /* Thêm khoảng cách bên trong */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+}
+
+/* Hiển thị thông báo */
+.completion-message.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* Ẩn thông báo */
+.completion-message.hidden {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+}
+
+/* Hoạt hình trái tim */
+.heart-animation {
+  position: fixed;
+  bottom: -50px; /* Đặt vị trí ban đầu bên dưới màn hình */
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 24px;
+  animation: floatUp 3s ease-in infinite;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Hiệu ứng nổi cho trái tim */
+@keyframes floatUp {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -100vh);
+    opacity: 0;
+  }
+}
+
+/* Highlight lỗi */
+.highlight-error {
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
